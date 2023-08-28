@@ -50,4 +50,4 @@ Explanation:
 SELECT class 
 FROM Courses
 GROUP BY class
-HAVING (DISTINCT student) >= 5;
+HAVING COUNT (DISTINCT student) >= 5;
